@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap');
+* { padding: 0; margin: 0; outline: 0;}
+body { font-family: 'Mukta', sans-serif; color: #000; font-size: 16px; line-height:22px; background: #fff;transition-delay: 0.25s;}
+article, aside, footer, header, i, section { display: block;}
+input { font-size: 16px;}input[type=button] { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+a { color: #1f1a17; text-decoration: none;}
+.fl { float: left;}
+.fr { float: right;}
+img { max-width: 100%;}
+ul { list-style: none;}
+.h1 { font-weight: 900; color: #b30f18; font-size: 18px; line-height: 38px; float: left; border-bottom: 1px solid #b30f18; margin-bottom:-1px;}
+.h2 { float: left; font-size: 18px; line-height: 38px; font-weight: 900; color: #b30f18; border-bottom: 1px solid #b30f18; margin-bottom: -1px;}
+.h3 {/* padding-bottom: 10px;  line-height: 24px;*/}
+.adsCont{ text-align: center; clear: both; margin: 0 0 20px; position: relative}
+/*Sprite css*/
+.icon{ background-image:url(../images/sprite.png); background-repeat:no-repeat;}
+.TopLMenu li.VideoM i,.TopLMenu li.StateM i,.TopLMenu li.downloadBtn i,.HShareBTN,.fBtn,.twitBtn,.whatsBtn,.emailBtn{ text-indent:-100px; overflow:hidden; display:block; width:25px; height:25px; float:left;}/*Sprite css End*/
+.flex{display:flex;}
+/*Hover css*/
+.top9MenuLink li a:hover,.catTime a{ color:#dc0000;}
+/*Hover css*/
+
+.FullCont{ width: 100%; float: left; }
+
+.MainCont { max-width:1216px; margin: 0 auto;}
+.LeftCont{ width:calc(100% - 320px); float:left;}
+.RightCont{width:300px; float:right;}
+
+/*Header Start*/
+.Header{ background:#1450d2; padding:5px 0 5px; }
+.Header .MainCont{ position:relative;}
+.TopLMenu{ margin-top:14px; float:left; width:38%;}
+.MenuBtn { float: left; margin: 0; cursor: pointer; padding:5px 0px 3px 0;}
+.MenuBtn i { width:19px; display: block; border-top:1px solid #FFF; padding-top:4px;}
+.MenuBtn i:nth-child(2){top: 23px;margin-left: 3px;}
+.MenuBtn i:nth-child(3){top: 27px;}
+
+.sidenav { height: 100%; width:0; position:fixed; z-index:1; top:0; left:0; background-color:#111; overflow-x:hidden; transition:0.5s; padding-top:60px;}
+.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s;}
+.sidenav a:hover { color: #f1f1f1;}
+.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left:50px;}
+
+.TopLMenu li{ float:left; margin-right:15px;}
+.TopLMenu li a{ color:#FFF;}
+.TopLMenu li.VideoM i{background-position:0px 0px;}
+.TopLMenu li.StateM i{background-position: -23px 0px;}
+.TopLMenu li.downloadBtn i{background-position:-75px -2px;}
+.TopLMenu li.downloadBtn{ background:#dc0000; padding:5px 10px 3px; margin-top: -5px; border-radius:0 0 0 9px; font-size:14px;}
+
+.LogoPart{ display:inline-block; width:23%; text-align:center;}
+.TopRMenu{ float:right; width:38%;margin-top:3px;}
+.TopRMenu li{ float:left; margin-left:15px;}
+.langMenu{position: relative; margin-top:7px;}
+.langMenu select{padding: 5px; border-radius: 6px; border: 1px solid #5d89e8;height: 30px;  font-size:14px; color: #fff; background:#1450d2; }
+.langMenu select > option{ background:#FFF; color:#000;}
+.search{ background:#1450d2; position:absolute; top:10px; right:0;}
+.search button[type=submit]{ background:none; border:0; position: absolute; right:3px; top:2px;}
+.search button[type=submit] .search_btn {width:22px; height:22px; display: block; background-position:-103px 0px;}
+.search input[type=text] { float:right; width:150px; display: block; box-sizing: border-box; border: none;  font-size: 16px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; height:30px; padding:0 15px;  outline: none; border-radius:5px; background:#1450d2; border:1px solid #5d89e8;}
+.search input::placeholder { color:#fff; opacity: 1;}
+.search input[type=text]:focus{ width:99%;}
+
+.TopRMenu li.TOPShare{ position:relative;}
+.TOPShare .socialTop{ display:none; background: #fff; padding:10px 0; width:55px; border-radius: 10px; position: absolute; top:44px; right: -17px; z-index: 1; box-shadow:2px 2px 5px #b9b9b9;}
+.socialTop li{ float:left; padding-bottom:5px; margin-bottom:5px;}
+.socialTop li:last-child{ border-bottom:0;padding-bottom:0px; margin-bottom:0px;}
+.TOPShare .socialTop:after{content: ''; position: absolute; top:-11px; left:18px; border: 0 solid transparent; border-right-width: 8px; border-left-width: 8px; border-bottom: 12px solid #FFF;}	
+.TOPShare:hover .socialTop{ display:block; }
+.TOPShare .HShareBTN{background-position:-46px -2px; margin-top:14px;}
+.fBtn{background-position:-182px -1px; }
+.twitBtn{background-position:-219px -1px; }
+.whatsBtn{background-position:-256px -1px; }
+.emailBtn{background-position:-293px -1px;}
+/*Header End*/
+
+.top9MenuBox{margin:2px 0;}
+.top9Menu{background:#dc0000; padding:5px 0px;  border-radius:0 0 0 9px; font-weight:bold; float:left; width:80px; text-align:center; color:#FFF; line-height:25px;}
+.top9MenuLink{ border:solid 1px #d5d5d5; width:calc(99.8% - 80px); float:left; background: #fff; white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: auto; line-height:30px;}
+.top9MenuLink li{ display:inline-block; font-weight:bold; margin:0 11px; position:relative;margin-top: 3px;}
+.top9MenuLink li:before{ border-right:solid 1px #eee; content:''; position:absolute; right: -13px; top: 10px; height: 10px;}
+.top9MenuLink li:last-child:before{ border:0;}
+
+.TrendStrip{margin:5px 0 10px; background:#1450d2;}
+.TrendStripHD{background:#ffffff; position:relative; text-transform:uppercase; margin:5px 0px; font-weight:bold; float:left; width:110px; text-align:center; color:#dc0000; line-height:25px; margin-left:5px; overflow:hidden;}
+.TrendStripHD::before { content: ""; display: block; width: 26px; height: 18px; background: #1450d2; transform: rotate(68deg); float: right; position: absolute; right: -16px; top: 0px;}
+.TrendStripLink{width:calc(99.8% - 120px); float:left; white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: auto; line-height:30px; }
+.TrendStripLink li{ display:inline-block; font-weight:bold; margin:0 12px; position:relative;margin-top: 3px;}
+.TrendStripLink li a{ color:#FFF;}
+.TrendStripLink li:before{ border-right:solid 1px #eee; content:''; position:absolute; right: -13px; top: 10px; height: 10px;}
+.TrendStripLink li:last-child:before{ border:0;}
+
+.BreakingN{ background:#000; position:relative; margin:30px 0 20px; padding:50px 3% 50px; display:flex; justify-content: space-between; color:#FFF;}
+.BNMainHD{ display:block; text-transform:uppercase; background:#dc0000; font-size:30px; line-height:53px; text-align:center; width:250px; position:absolute; top:-15px; left:50%; margin-left:-120px;}
+.BNMainHD:before{content:""; display:block; width:26px; height:53px; background:url(../images/left-corner.png) no-repeat; position:absolute; left:-16px; top: 0px;}
+.BNMainHD:after{content:""; display:block; width:26px; height:53px; background:url(../images/right-corner.png) no-repeat; position:absolute; right:-16px; top: 0px;}
+.BNimgCont{width: 40%;  position:relative;}
+.BnewsCont{width:58%; color:#FFF;}
+.BnewsCont .BnewsHD{ font-size:30px; color:#FFF; font-weight:700; line-height:40px;}
+.BnewsCont p{ font-size:18px; line-height: 28px;}
+.BNCrossbtn{ position:absolute; top:0px; right: 15px; font-size: 36px; font-weight: normal;line-height:40px; display:block; color:#FFF;}
+
+.socialHov{ position:absolute; bottom:-10px; right:10px; background:#FFF; border-radius:50%; width:38px; height:38px; box-shadow: 3px 0px 4px #5d5d5d;}
+.socialHov .shareIcon{background-position:-138px 5px; content:''; display:block; height:38px; width:38px; cursor:pointer;}
+.socialHov .socialTop{display:none; position:absolute; bottom:45px; left:-5px; width:25px; background:#fff; padding:10px; border-radius:6px; box-shadow:0px 3px 6px #bbb;}
+.socialHov:hover .socialTop{ display:block; }
+.socialHov .socialTop:after{content: ''; position: absolute; bottom: -5px; left: 15px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #fff;}
+.socialHov .socialTop li{}
+
+
+.catTime{ line-height:15px; margin:5px 0 8px; font-size:13px; position:relative;}
+.catTime a{text-transform:uppercase; position:relative;}
+.catTime a:after{ position:absolute; right:-10px; border-right:1px solid #aaa; content:''; height:10px; top:3px;}
+.catTime span{display: block; margin-left: 20px;}
+
+
+/*newsTop9*/
+.newsTop9{}
+.commonHD{border-bottom: 1px solid #f1f1f1; float: left; width: 100%; margin-bottom:10px;  position: relative;}
+.commonHD h2 {float: left; background:#dc0000; text-transform:uppercase; padding:0px 0 0 10px; border-radius: 0px 0px 0px 5px; line-height:35px;}
+.commonHD h2 a{ color:#fff;font-size:22px; }
+.commonHD h2 a span{ background:#1450d2; display:inline-block; padding:0 20px 0 10px; position:relative;}
+.commonHD h2 a span:after{content: ""; display: block; display:block;  width:41px;  height:17px; background: #fff; transform: rotate(73deg);  position: absolute;     right:-22px; top:4px;}
+.moreNews {float: right; margin-top:11px; font-weight:700;}
+.moreNews span { color: #000;}
+.moreNews span span{ color:#dc0000;}
+.imgCont{ position:relative;}
+.BigStory{ width:283px;}
+.BigStory .h3{ margin:10px 0; }
+.smallStory{width:calc(100% - 283px);}
+.col2 > ul > li{width:48%; float:left; margin:0px 0px 20px 2%;border-bottom: solid 1px #eee;}
+.col2 .imgCont{ width:102px; float:right; margin-left: 5px;}
+.col2 .h3{font-family: 'Mukta', sans-serif; width:140px; font-size:15px; line-height:20px; float:right;}
+.col2 .socialHov{ box-shadow:none; background:none;}
+.col2 .socialHov .shareIcon{ margin-left:0;}
+.col2 .catTime{ clear:both;}
+
+.FirstS{ margin-bottom:20px;}
+.P1RHS .commonHD h2 a span{background: #dc0000;}
+.col2.rhs > ul > li{ width:100%;}
+
+.topNewscomp{ clear:both; display:flex; justify-content:space-between; }
+
+.blnk{ display:block; background:#F00; width:10px; height:10px; margin: 2px 8px 0 0; border-radius: 50px; animation: blinker 1s linear infinite;}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.p1LiveBlog{}
+.liveBlogHd{border-bottom: solid 1px #eee; padding-bottom:10px;}
