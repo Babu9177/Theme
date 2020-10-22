@@ -47,8 +47,6 @@ class tv9_home_trending extends WP_Widget {
 		?>
            
 			<?php if ($showhide == 'show') { ?>
-			<div class="FullCont">
-  <div class="MainCont">
 			<div class="TrendStrip flex">   
 	<?php 
         $tags = get_tags(array(
@@ -70,15 +68,14 @@ class tv9_home_trending extends WP_Widget {
         echo '<li><a href="#">' . $tag->name . '</a></li>';
         }
         echo '</ul>';
-		echo '</div>';
+		
 
                 
                     
             
 				?>
              </div>
-			 </div>
-			 </div>
+			 
 				<?php } ?>
 				
 			

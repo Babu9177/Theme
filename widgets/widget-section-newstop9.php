@@ -53,8 +53,7 @@ class tv9_section_newstop9_widget extends WP_Widget {
         "seven","eight","nine");
         
         ?>
-  	<div class="FullCont">
-  <div class="MainCont">
+  
     <div class="LeftCont">
       <div class="newsTop9">
         <div class="commonHD">
@@ -166,9 +165,7 @@ class tv9_section_newstop9_widget extends WP_Widget {
         </div>
       </div>
     </div>
-	</div>
-	</div>
-                                            <?php } ?>
+	                                 <?php } ?>
 			
 			
 

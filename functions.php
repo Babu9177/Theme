@@ -2,7 +2,6 @@
 
 function tv9_theme_styles() {
 	wp_enqueue_style( 'common-header', get_template_directory_uri() . '/css/common-header-footer.css' );
-	wp_enqueue_style( 'common-header-d', get_template_directory_uri() . '/css/common-header-footer-d.css' );
 	wp_enqueue_script( 'common-1-1', get_template_directory_uri() .'/js/common.js', array( 'jquery' ),'',true );
 	wp_enqueue_script( 'bxslider', get_template_directory_uri() .'/js/jquery.bxslider.min.js', array( 'jquery' ),'',true );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array( 'jquery' ),'',true );
@@ -41,55 +40,43 @@ if ( !function_exists( 'tv9_sidebars_init' ) ) {
 			'id' => 'header-widget',
 			'name' => esc_html__( 'TV9 Header Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area in header.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 		register_sidebar(array(
 			'id' => 'homepage-widget',
 			'name' => esc_html__( 'TV9 Homepage Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area in the main content area of the homepage.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 		register_sidebar(array(
 			'id' => 'homepage-sidebar-widget',
 			'name' => esc_html__( 'TV9 Homepage Sidebar Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area in the main content area of the homepage sidebar.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 		register_sidebar(array(
 			'id' => 'category-sidebar-widget',
 			'name' => esc_html__( 'TV9 Category Sidebar Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area of category page sidebar.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 		register_sidebar(array(
 			'id' => 'category-home-widget',
 			'name' => esc_html__( 'TV9 Category Homepage Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area of category homepage.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 		register_sidebar(array(
 			'id' => 'footer-home-widget',
 			'name' => esc_html__( 'TV9 Footer Widget Area', 'veegam-news' ),
 			'description'   => esc_html__( 'The widgetized area of footer.', 'tv9-news' ),
-			'before_widget' => '<section id="%1$s" class="tv9-widget-home %2$s"><div class="tv9-main-box">',
-			'after_widget' => '</div></section>',
-			'before_title' => '<div class="tv9-widget-home-head"><h4 class="tv9-widget-home-title"><span class="tv9-widget-home-title">',
-			'after_title' => '</span></h4></div>',
+			'before_widget' => '',
+			'after_widget' => '',
 		));
 	}
 }
@@ -99,6 +86,9 @@ include( get_template_directory() . '/widgets/widget-breaking-trending.php');
 include( get_template_directory() . '/widgets/widget-breaking.php');
 include( get_template_directory() . '/widgets/widget-top9-menu.php');
 include( get_template_directory() . '/widgets/widget-section-newstop9.php');
+include( get_template_directory() . '/widgets/widget-section-newstop9-right.php');
+
+
 
 
 

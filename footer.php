@@ -1,3 +1,6 @@
+</div>
+</div>
+
 <!--Footer Start-->
 <div class="Footer">
   <div class="MainCont">

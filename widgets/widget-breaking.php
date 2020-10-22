@@ -47,8 +47,7 @@ class tv9_home_feat1_widget extends WP_Widget {
 		?>
            
 			<?php if ($showhide == 'show') { ?>
-				<div class="FullCont">
-  <div class="MainCont">
+				
 	<div class="BreakingN">
 	<b class="BNMainHD"><?php echo $title ?></b>
 	<?php if ($tagcat == 'ID') { ?>
@@ -90,8 +89,7 @@ class tv9_home_feat1_widget extends WP_Widget {
 							<?php } ?>
 							
 		 </div> 
-				</div>
-				</div>
+				
 				<?php } ?>
 				
 				

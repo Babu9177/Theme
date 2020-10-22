@@ -1,27 +1,27 @@
 <?php
 
-// Top9 Menu
+// Breaking News
 
-add_action( 'widgets_init', 'tv9_top9_menu_load_widgets' );
+add_action( 'widgets_init', 'tv9_section_tag_load_widgets' );
 
-function tv9_top9_menu_load_widgets() {
-	register_widget( 'tv9_top9_menu_trending' );
+function tv9_section_tag_load_widgets() {
+	register_widget( 'tv9_section_tag_widget' );
 }
 
-class tv9_top9_menu_trending extends WP_Widget {
+class tv9_section_tag_widget extends WP_Widget {
 
 	/**
 	 * Widget setup.
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'tv9_top9_menu_trending', 'description' => esc_html__('A widget that allows you to show the menu in the header part.', 'tv9-news') );
+		$widget_ops = array( 'classname' => 'tv9_section_tag_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
 
 		/* Widget control settings. */
-		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_top9_menu_trending' );
+		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'tv9_top9_menu_trending', esc_html__('Top9 Menu Widget', 'veegam'), $widget_ops, $control_ops );
+		parent::__construct( 'tv9_section_tag_widget', esc_html__('NEWSTOP9 SECTION Widget', 'veegam'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -33,9 +33,9 @@ class tv9_top9_menu_trending extends WP_Widget {
 		/* Our variables from the widget settings. */
 		global $post;
 		$title = apply_filters('widget_title', $instance['title'] );
-		
 		$showhide = $instance['showhide'];
-		
+		$tagcat = $instance['tagcat'];
+		$enterslug = $instance['enterslug'];
 
 		/* Before widget (defined by themes). */
 		echo $before_widget;
@@ -45,49 +45,12 @@ class tv9_top9_menu_trending extends WP_Widget {
 		
 
 		?>
-           
-		    
-
-
-               
-			<?php if ($showhide == 'show') { ?>
-			
-			<div class="top9MenuBox flex">
-   
-	<?php 
-        $tags = get_tags(array(
-            'smallest'                  => 10, 
-            'largest'                   => 22,
-            'unit'                      => 'px', 
-            'number'                    => 10,  
-            'format'                    => 'flex',
-            'separator'                 => " ",
-            'orderby'                   => 'count', 
-            'order'                     => 'DESC',
-            'show_count'                => 1,
-            'echo'                      => false
-        ));
 		
-        echo '<div class="top9Menu">'.$title.'</div>';
-        echo '<ul class="top9MenuLink">';
-        foreach ($tags as $tag) {
-        echo '<li><a href="#">' . $tag->name . '</a></li>';
-        }
-        echo '</ul>';
-     
-                
-                    
-            
-				?>
-				</div>
-				
-				<?php } ?>
-				
-				
+
 			
+
+          			
 			
-	
-          
 		<?php
 
 		/* After widget (defined by themes). */
@@ -103,9 +66,9 @@ class tv9_top9_menu_trending extends WP_Widget {
 
 		/* Strip tags for title and name to remove HTML (important for text inputs). */
 		$instance['title'] = strip_tags( $new_instance['title'] );
-
 		$instance['showhide'] = strip_tags( $new_instance['showhide'] );
-
+		$instance['tagcat'] = strip_tags( $new_instance['tagcat'] );
+		$instance['enterslug'] = strip_tags( $new_instance['enterslug'] );
 
 		return $instance;
 	}
@@ -136,7 +99,20 @@ class tv9_top9_menu_trending extends WP_Widget {
 		</p>
 		
 
-		
+		<!-- Cat/Tag -->
+		<p>
+			<label for="<?php echo $this->get_field_id('tagcat'); ?>">Display Posts By Category Or Tag:</label>
+			<select id="<?php echo $this->get_field_id('tagcat'); ?>" name="<?php echo $this->get_field_name('tagcat'); ?>" style="width:100%;">
+				<option value='category' <?php if ('category' == $instance['tagcat']) echo 'selected="selected"'; ?>>Category</option>
+				<option value='tag' <?php if ('tag' == $instance['tagcat']) echo 'selected="selected"'; ?>>Tag</option>
+			</select>
+		</p>
+
+		<!-- Enter Cat/Tag -->
+		<p>
+			<label for="<?php echo $this->get_field_id( 'enterslug' ); ?>">Enter Category/Tag Slug Name:</label>
+			<input id="<?php echo $this->get_field_id( 'enterslug' ); ?>" name="<?php echo $this->get_field_name( 'enterslug' ); ?>" value="<?php echo $instance['enterslug']; ?>" style="width:90%;" />
+		</p>
 
 	<?php
 	}

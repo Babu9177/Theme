@@ -8,6 +8,9 @@
 		<?php wp_head(); ?>
 </head>
 <body>
+<?php $templdir = get_template_directory_uri(); ?>
+<div class="gutterLHS"><img src="<?php echo $templdir; ?>/images/gutter.jpg" alt="" /></div>
+<div class="gutterRHS right"><img src="<?php echo $templdir; ?>/images/gutter.jpg" alt="" /></div>
 <div class="Header" id="Header">
     <div class="MainCont">
       <div id="mySidenav" class="sidenav"> 
@@ -102,10 +105,10 @@
         <li class="downloadBtn"><a href="#"><i class="icon"></i> Download App</a></li>
         <li class="downloadBtn moble"><a href="#"><i class="icon"></i> App</a></li>
       </ul>
-      <div class="LogoPart"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+      <div class="LogoPart"><a href="#"><img src="<?php echo $templdir; ?>/images/logo.png" alt="" /></a></div>
       <div class="TopRMenu">
         <ul>
-          <li><a href="#"><img src="images/livetv.png" alt="" /></a></li>
+          <li><a href="#"><img src="<?php echo $templdir; ?>/images/livetv.png" alt="" /></a></li>
           <li class="TOPShare"><a href="#" ><i class="icon HShareBTN"></i></a>
             <ul class="socialTop">
               <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
@@ -127,7 +130,7 @@
           <li>
             <div class="search-icon"><i class="icon search_btn"></i></div>
             <form action="#" method="post" id="headerSearch" class="search">
-              <div class="search-box"> <div class="search-icon"><img src="images/CloseIcon.png"></div>
+              <div class="search-box"> <div class="search-icon"><img src="<?php echo $templdir; ?>/images/CloseIcon.png"></div>
                 <input autocomplete="off" placeholder="Search" type="text" id="searchText2" name="searchText2">
               <button id="clickSearchValue" type="submit" disabled="" class="icon search_btn"><i class="icon search_btn"></i></button>
               </div>
@@ -137,9 +140,11 @@
       </div>
     </div>
   </div> <!--Header CLose-->
-		
-		<?php if ( is_active_sidebar( 'header-widget' ) ) { ?>
+  <div class="FullCont">
+  <div class="MainCont">
+  <?php if ( is_active_sidebar( 'header-widget' ) ) { ?>
 			<?php dynamic_sidebar( 'header-widget' ); ?>
 		<?php } ?>
+		
 
 		
