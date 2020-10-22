@@ -88,7 +88,36 @@ include( get_template_directory() . '/widgets/widget-top9-menu.php');
 include( get_template_directory() . '/widgets/widget-section-newstop9.php');
 include( get_template_directory() . '/widgets/widget-section-newstop9-right.php');
 
+//breadcrumb
 
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
+
+//time ago
+
+function time_ago( $type = 'post' ) {
+    $d = 'comment' == $type ? 'get_comment_time' : 'get_post_time';
+
+    return human_time_diff($d('U'), current_time('timestamp')) . " " . __('ago');
+
+}
 
 
 

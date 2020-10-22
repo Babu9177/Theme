@@ -59,7 +59,7 @@ class tv9_section_newstop9_right_widget extends WP_Widget {
 	<?php if ($showhide == 'show') { ?>
 	
     <div class="RightCont">
-      <div class="adsCont"><img src="images/300x250.png" alt="" /></div>
+      <div class="adsCont"><img src="<?php echo get_template_directory_uri(); ?>/images/300x250.png" alt="" /></div>
       <div class="P1RHS HdRed">
         <div class="commonHD">
           <h2> <a href="#"><b>COVID 19</b><span>&nbsp;</span></a> </h2>
