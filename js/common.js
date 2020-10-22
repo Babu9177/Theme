@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function(){
   $(".BNCrossbtn").click(function(){
     $(".BreakingN").remove();
   });
@@ -20,13 +20,12 @@ jQuery(document).ready(function($){
 
 // Menu
 function openNav() {
-	jQuery(document).ready(function($){
     if ($('body').hasClass('open-nav')){
        $('body').removeClass('open-nav');
+       $('.menu li').eq(0).addClass('active');
        $('.menu li span').click(function(){
-        if ($('.menu li').hasClass('active')){
+        if ($(this).parent('li').hasClass('active')){
             $('.menu li').removeClass('active');
-            $(this).parent('li').addClass('active');
         }else{
           $('.menu li').removeClass('active');
           $(this).parent('li').addClass('active');
@@ -44,19 +43,19 @@ function openNav() {
         $(this).parent('.tab-box').find('.tab-content').addClass('active');
 
       });
-*/	  
+*/	  $('.menu li').eq(0).addClass('active');
       $('.menu li span').click(function(){
-        if ($('.menu li').hasClass('active')){
+        if ($(this).parent('li').hasClass('active')){
             $('.menu li').removeClass('active');
-            $(this).parent('li').addClass('active');
+            
         }else{
           $('.menu li').removeClass('active');
           $(this).parent('li').addClass('active');
         }
+		
       });
 
     }
-	});
     
 }
 
@@ -84,4 +83,8 @@ $(document).ready(function(){
       document.body.classList.remove("sticky");
     }
   }
+  	$('.leftSidebar, .content, .rightSidebar')
+					.theiaStickySidebar({
+						additionalMarginTop: 30
+					});
 });

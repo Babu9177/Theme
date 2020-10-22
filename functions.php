@@ -1,10 +1,13 @@
 <?php
 
 function tv9_theme_styles() {
+		
 	wp_enqueue_style( 'common-header', get_template_directory_uri() . '/css/common-header-footer.css' );
-	wp_enqueue_script( 'common-1-1', get_template_directory_uri() .'/js/common.js', array( 'jquery' ),'',true );
-	wp_enqueue_script( 'bxslider', get_template_directory_uri() .'/js/jquery.bxslider.min.js', array( 'jquery' ),'',true );
-	wp_enqueue_script( 'jquery', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array( 'jquery' ),'',true );
+	wp_enqueue_script( 'jquery35', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array( ),'',false );
+	wp_enqueue_script( 'bxslider', get_template_directory_uri() .'/js/jquery.bxslider.min.js',array('jquery35' ),'',false );
+	wp_enqueue_script( 'mycommon', get_template_directory_uri() .'/js/common.js',array('jquery35' ),'',false );
+	wp_enqueue_script( 'theia-sticky-sidebar', get_template_directory_uri() .'/js/theia-sticky-sidebar.min.js',array('jquery35' ),'',false );
+	
     
 
 

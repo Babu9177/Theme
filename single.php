@@ -1,589 +1,408 @@
 <?php get_header(); ?>
-<?php global $author; $userdata = get_userdata($author); ?>
-<article id="mvp-article-wrap">
-    <section>
-        <div class="container">
-            <div class="row mt-4">
-                <!--Left side body part-->
-                <div class="col-sm-9">
-                    <!--Home nav body part-->
-                    <div class="card card-disply">
-                        <span>Home</span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <span>News one</span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <span>News two</span>
+<?php $templdir = get_template_directory_uri(); ?>
+    <!--Middle Section-->
+    <div class="adsCont"><img src="<?php echo $templdir ?>/images/ad.png" alt="" /></div>
+     <div class="detailBody">
+      <div class="DetailSocial leftSidebar">
+        <ul class="socialTop">
+          <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+          <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+          <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+          <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+        </ul>
+      </div>
+      
+      <!--P1 Start Top 9-->
+      <div class="LeftCont content">
+        <div class="breadcrum">
+          <ul>
+            <li> <a href="#"><strong>हिंदी न्यूज़</strong></a> </li>
+            <li><a href="#">व्यापार</a> </li>
+            <li><a href="#">biz</a> </li>
+          </ul>
+        </div>
+        <h1 class="article-HD">Bihar Election: “तुमको वोट नहीं देना है तो मत दो”, रैली में लालू जिंदाबाद के नारों पर भड़के नीतीश कुमार</h1>
+        <p class="summery">नीतीश कुमार बुधवार को परसा विधानसभा क्षेत्र के डेरनी खेल मैदान में पूर्व मंत्री और तेज प्रताप यादव के ससुर चंद्रिका राय के पक्ष में चुनावी सभा को संबोधित कर रहे थे. इस दौरान भीड़ में से लालू प्रसाद यादव के पक्ष में नारेबाजी होने लगी.</p>
+        <ul class="AuthorInfo">
+          <li>TV9 Bangla</li>
+          <li>Publish Date - Tue, 06 Oct 2020 04:14 PM (IST)</li>
+          <li> Author - Hridyanshu Dutta</li>
+        </ul>
+        <div class="ArticleBodyCont">
+          <div class="articleImg"><img src="<?php echo $templdir ?>/images/articleimg.jpg" alt="" /> </div>
+          <div class="smallSum">Nitish Kumar announces the Bihar seat-sharing arrangement on Tuesday. ANI</div>
+          <p>बिहार में विधानसभा चुनाव (Bihar Assembly election 2020) के चलते राजनीतिक माहौल गर्म है. नेताओं की बड़ी-बड़ी रैलियां और उन रैलियों में नेता जी के समर्थन में जमकर नारेबाजी की गूंज सुनाई देगी, लेकिन सोचिए कि जब किसी नेता की रैली में भीड़ का एक हिस्सा विरोधी नेता के समर्थन में नारे लगाए, तो उस नेता को कैसा लगे? ऐसा ही वाकया हुआ छपरा के परसा में, जहां नीतीश कुमार की रैली में लालू प्रसाद यादव के समर्थन में नारे लगाए गए, जिसे देख नीतीश कुमार आग बबूला हो गए और गुस्से में बोल दिया, &ldquo;तुमको अगर वोट नहीं देना है तो मत दो…&rdquo;</p>
+          <p>दरअसल मुख्यमंत्री नीतीश कुमार बुधवार को परसा विधानसभा क्षेत्र के डेरनी खेल मैदान में पूर्व मंत्री और तेज प्रताप यादव के ससुर चंद्रिका राय के पक्ष में <a href="https://www.tv9bharatvarsh.com/bihar-assembly-election-2020">चुनावी सभा</a> को संबोधित कर रहे थे. इस दौरान भीड़ में से लालू प्रसाद यादव के पक्ष में नारेबाजी होने लगी.</p>
+          <p>इसके बाद नीतीश कुमार ने कहा, &ldquo;हमको पता है कि ये बीच में क्या बोल रहे हो जी..क्या बोल रहे हो? क्या बोल रहे हो? जरा हाथ उठाओ क्यों अनाब-शनाब बोल रहे हो…यहां पर ये सब हल्ला मत करो..तुमको अगर वोट नहीं देना है तो मत दो..लेकिन क्या ये हल्ला करना सही है कि गलत है?&rdquo;</p>
+          <p>बिहार में विधानसभा चुनाव (Bihar Assembly election 2020) के चलते राजनीतिक माहौल गर्म है. नेताओं की बड़ी-बड़ी रैलियां और उन रैलियों में नेता जी के समर्थन में जमकर नारेबाजी की गूंज सुनाई देगी, लेकिन सोचिए कि जब किसी नेता की रैली में भीड़ का एक हिस्सा विरोधी नेता के समर्थन में नारे लगाए, तो उस नेता को कैसा लगे? ऐसा ही वाकया हुआ छपरा के परसा में, जहां नीतीश कुमार की रैली में लालू प्रसाद यादव के समर्थन में नारे लगाए गए, जिसे देख नीतीश कुमार आग बबूला हो गए और गुस्से में बोल दिया, &ldquo;तुमको अगर वोट नहीं देना है तो मत दो…&rdquo;</p>
+          <p>दरअसल मुख्यमंत्री नीतीश कुमार बुधवार को परसा विधानसभा क्षेत्र के डेरनी खेल मैदान में पूर्व मंत्री और तेज प्रताप यादव के ससुर चंद्रिका राय के पक्ष में <a href="https://www.tv9bharatvarsh.com/bihar-assembly-election-2020">चुनावी सभा</a> को संबोधित कर रहे थे. इस दौरान भीड़ में से लालू प्रसाद यादव के पक्ष में नारेबाजी होने लगी.</p>
+          <img src="<?php echo $templdir ?>/images/detail-twit.jpg" alt="" />
+          <p>इसके बाद नीतीश कुमार ने कहा, &ldquo;हमको पता है कि ये बीच में क्या बोल रहे हो जी..क्या बोल रहे हो? क्या बोल रहे हो? जरा हाथ उठाओ क्यों अनाब-शनाब बोल रहे हो…यहां पर ये सब हल्ला मत करो..तुमको अगर वोट नहीं देना है तो मत दो..लेकिन क्या ये हल्ला करना सही है कि गलत है?&rdquo;</p>
+          <p>बिहार में विधानसभा चुनाव (Bihar Assembly election 2020) के चलते राजनीतिक माहौल गर्म है. नेताओं की बड़ी-बड़ी रैलियां और उन रैलियों में नेता जी के समर्थन में जमकर नारेबाजी की गूंज सुनाई देगी, लेकिन सोचिए कि जब किसी नेता की रैली में भीड़ का एक हिस्सा विरोधी नेता के समर्थन में नारे लगाए, तो उस नेता को कैसा लगे? ऐसा ही वाकया हुआ छपरा के परसा में, जहां नीतीश कुमार की रैली में लालू प्रसाद यादव के समर्थन में नारे लगाए गए, जिसे देख नीतीश कुमार आग बबूला हो गए और गुस्से में बोल दिया, &ldquo;तुमको अगर वोट नहीं देना है तो मत दो…&rdquo;</p>
+          <p>दरअसल मुख्यमंत्री नीतीश कुमार बुधवार को परसा विधानसभा क्षेत्र के डेरनी खेल मैदान में पूर्व मंत्री और तेज प्रताप यादव के ससुर चंद्रिका राय के पक्ष में <a href="https://www.tv9bharatvarsh.com/bihar-assembly-election-2020">चुनावी सभा</a> को संबोधित कर रहे थे. इस दौरान भीड़ में से लालू प्रसाद यादव के पक्ष में नारेबाजी होने लगी.</p>
+          <p>इसके बाद नीतीश कुमार ने कहा, &ldquo;हमको पता है कि ये बीच में क्या बोल रहे हो जी..क्या बोल रहे हो? क्या बोल रहे हो? जरा हाथ उठाओ क्यों अनाब-शनाब बोल रहे हो…यहां पर ये सब हल्ला मत करो..तुमको अगर वोट नहीं देना है तो मत दो..लेकिन क्या ये हल्ला करना सही है कि गलत है?&rdquo;</p>
+        </div>
+        
+        <div class="commonHD hdBG">
+          <h2> <a href="#"><b>Tags</b> <span>&nbsp;</span></a> </h2>
+          <ul class="TrendStripLink">
+        <li><a href="#">देश</a></li>
+        <li><a href="#">लेटेस्ट</a></li>
+        <li><a href="#">राज्य</a></li>
+        <li><a href="#">मनोरंजन</a></li>
+        <li><a href="#">बिहार इलेक्शन</a></li>
+        <li><a href="#">खेल</a></li>
+        <li><a href="#">बिहार इलेक्शन</a></li>
+       </ul></div>
+        
+        <div class="Mgid"><img src="<?php echo $templdir ?>/images/mgid.jpg" alt="" /></div>
+        
+        <div class="RelatedNews">
+            <div class="newsTop9 HdRed">
+                <div class="commonHD">
+                <h2> <a href="#"><b>Related News</b> <span>&nbsp;</span></a> </h2>
+                <a class="moreNews" href="#"><span>और पढ़ें <span>&gt;</span></span></a> </div>
+                <div class="topNewscomp">
+            <div class="BigStory">
+                <div class="FirstS">
+                <div class="imgCont">
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
                     </div>
-                    <!--End Home nav body part-->
-                    <!--Scoial Media body part-->
-                    <div class="icon-bar">
-                                     			<?php
-                         global $post;
-
-                         $mojoURL = urlencode(get_permalink());
- 
-        $mojoTitle = str_replace( ' ', '%20', get_the_title());
-    
-        $mojoThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-
-        $twitterURL = 'https://twitter.com/intent/tweet?text='.$crunchifyTitle.'&amp;url='.$mojoURL.'&amp;';
-        $facebookURL = 'https://www.facebook.com/sharer.php?u='.$mojoURL;
-       // $googleURL = 'https://plus.google.com/share?url='.$mojoURL;
-//$linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$mojoURL.'&amp;title='.$mojoTitle;
-        $whatsappURL = 'https://wa.me/?text='.$mojoTitle . ' ' . $mojoURL;
-
-        //$variable .= '<div class="entry-social">';
-        $variable .= '<a href="'. $twitterURL .'" target="_blank"><i class=" fa fa-twitter"></i></a>';
-        $variable .= '<a href="'.$facebookURL.'" target="_blank"><i class=" fa fa-facebook"></i></a>';
-        $variable .= '<a href="'.$whatsappURL.'" target="_blank"><i class=" fa fa-whatsapp"></i></a>';
-		
-     //$variable .= '</div>';
-      echo $variable;
-        ?>
-                    </div>
-                    <!--End Scoial Media body part-->
-                    <!--Context  body part-->
-                    <div class="contect-blog">
-                        <p>News two</p>
-                        <h1 class="single-post-title"><?php the_title(); ?></h1>
-						<p><?php the_excerpt(); ?></p>
-                        
-                            <span>Tv9 Bangla </span> | <span>Publish - <?php the_time( 'g:i a, D, j F y' )?></span> | <span>Author - <a href="javascript:;"><?php the_author();?> </a></span> |<span> T <i class="fa fa-arrows-v" aria-hidden="true"></i> </span>
-                        
-                    </div>
-					 <?php while(have_posts()) : the_post(); ?>
-                    <!--Context  img body part-->
-                    <div class="contect-blog">
-                        <img data-src="<?php echo $featured_img_url ;?>">
-													<?php if( has_post_thumbnail() ): echo get_the_post_thumbnail(); 
-												endif;?>
-                        <?php the_post_thumbnail_caption();?>
-                    </div>
-                    <!--Context  img body part-->
-                    <div class="contect-blog">
-                        <p>
-                           <?php the_content();?>
-                        </p>
-                    </div>
-
-                     <?php endwhile; ?>
-                    
-                    <!--End Context body part-->
-                    <!--Context in nav  body part-->
-                    <div class="contect-blog">
-					<ul class="list-inline tags">
-					<button type="button" class="btn btn-tags list-inline"><span class=" top">Tags</span></button>
-					 <?php $posttags = get_the_tags(); ?>
-  
-<?php foreach ( $posttags as $tag ) { ?>
-   <li class="list-inline-item tags"> <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag"> | <?php echo $tag->name; ?></a></li>
-<?php } ?>
-
-</ul>
-                       
-                    </div>
-                    <!--End Context in nav  body part-->
-                   
-                    
-                    <!--Bottom in RELATED NEWS  body part-->
-                    <div class="contect-blog">
-                        <nav class="navbar navbar-expand-md navbar-light bg-light  btn-t9-border">
-                            <button type="button" class="btn btn-danger btn-newscs"><span class="navbar-brand top btn-newscs-txt">RELATED NEWS</span></button>
-                        </nav>
-                    </div>
-                    <div class="contect-blog">
-                        <div class="row Relatednews">
-                            <div class="col-sm-4">
-                                <img src=" images/Coronavirus-vaccine.jpg" alt="" class="Relatednews-img" />
-
-
-                                <img src=" images/Coronavirus-vaccine.jpg" alt="" class="Relatednews-img" style="padding-top: 3px;" />
-                                <!--<i class="fa fa-share-square-o" aria-hidden="true"></i>-->
-                                <div class="">
-                                    <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-
-                                    <span style="color:red">Top News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-
-
-                                </div>
-                            </div>
-                            <div class="col-sm-4 related-news-tv9">
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <span style="color:red">Top News</span> |
-
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <span style="color:red">Top News</span> |
-
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <span class="p-m-bottom">Top News</span> |
-
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <p class="p-m-bottom">
-                                            <span style="color:red">Top News</span> |
-                                            <span>03 min ago</span>
-                                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <p class="p-m-bottom">
-                                            <span style="color:red">Top News</span> |
-                                            <span>03 min ago</span>
-                                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="p-sty">Top News in India: Read Latest News on Sports, Business, Entertainment</p>
-                                        <p class="p-m-bottom">
-                                            <span style="color:red">Top News</span> |
-                                            <span>03 min ago</span>
-                                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-3 related-news-3tv9">
-                                        <img src=" images/Coronavirus-vaccine.jpg" alt="" class="img-tv9-img-tum" />
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Bottom in RELATED NEWS  body part-->
+                    <a href="#"><img src="<?php echo $templdir ?>/images/image.jpg" alt=""></a> </div>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट</a></h3>
+                <div class="catTime flex"><a href="#">Category</a> <span>02 Min Ago</span></div>
                 </div>
-                <!--Left side body part-->
-                <!--right side body part-->
-                <div class="col-sm-3">
-                    <div class="">
-                        <img src=" images/Add-one-img.png" width="257" height="292" alt="" />
+                
+            </div>
+            <div class="smallStory col2">
+                <ul>
+                <li>
+                    <div class="imgCont"><a href="#"><img src="<?php echo $templdir ?>/images/image.jpg" alt=""></a></div>
+                    <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                    <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                        <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                        </ul>
                     </div>
-                    <div class="contect-blog">
-                        <nav class="navbar navbar-expand-md navbar-light bg-light  btn-t9-border">
-                            <button type="button" class="btn btn-danger btn-newscs"><span class="navbar-brand  btn-newscs-txt">NEWS</span></button>
-                            <button type="button" class="btn btn-t9cs"><span class="navbar-brand middle btn-t9txt">TOP 9</span></button>
-                            <span class="navbar-brand middle text-t9news">tv9 news <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                        </nav>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar  navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">1</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                           <span style="color:red; font-size:12px; padding:2px;">চালকের </span>|
-                           <span style="font-size:12px; padding:2px;"> 03 MIN AGO</span>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
+                </li>
+                <li>
+                    <div class="imgCont"><a href="#"><img src="<?php echo $templdir ?>/images/image.jpg" alt=""></a></div>
+                    <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                    <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                        <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                        </ul>
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">2</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">3</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
+                </li>
+                <li>
+                    <div class="imgCont"><a href="#"><img src="<?php echo $templdir ?>/images/image.jpg" alt=""></a></div>
+                    <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                    <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                        <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                        </ul>
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">4</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">5</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
+                </li>
+                
+                <li>
+                    <div class="imgCont"><a href="#"><img src="<?php echo $templdir ?>/images/image.jpg" alt=""></a></div>
+                    <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                    <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                        <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                        </ul>
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">6</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
                     </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">7</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">8</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-sm-8 mar-tv9-alig">
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <button type="button" class="btn btn-danger btn-newscs"><span class="navbar top navbar-brand-fon">TOP</br/>NEWS</span></button>
-                                    <span class="bg-tv9-news-one">9</span>
-
-                                </div>
-                                <div class="col-sm-6 padd-tv9-rev-one">
-                                    <span> Top News in India: Read Latest News</span>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 padd-tv9-rev">
-                                    <span style="font-size: 14px;color: #dc0000;">News Tv9</span> |
-                                </div>
-                                <div class="col-sm-6 padd-tv9-ago">
-                                    <div class="">
-                                        <span>03 min ago</span>
-                                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 padd-tv9-rev-img">
-                            <img src=" images/break-img.jpg" alt="" class="img-icon-tv9" />
-                        </div>
-
-                    </div>
-
-                    <!--Bottom in Also Read NEWS  body part-->
-                    <div class="contect-blog">
-                        <img src=" images/Add-one-img.png" width="257" height="292" alt="" />
-                    </div>
-                    <div class="contect-blog">
-                        <nav class="navbar navbar-expand-md navbar-light bg-light  btn-t9-border">
-                            <button type="button" class="btn btn-danger btn-newscs"><span class="navbar-brand top btn-newscs-txt">ALSO READ</span></button>
-
-                            <span class="navbar-brand middle text-t9news">tv9 news <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                        </nav>
-                    </div>
-
-
-                    <div class="col-sm-12 mar-tv9-alig">
-                        <div class="row">
-                            <div class="col-sm-7 padd-tv9-rev-one">
-                                <span> Top News in India: Read Latest News</span>
-                                <p class="p-m-bottom">
-                                    <span style="color:red">News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="col-sm-5">
-                                <img src=" images/break-img.jpg" alt="" class="img-icon-tv9 img-icon-tv9-left" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="col-sm-12 mar-tv9-alig">
-                        <div class="row">
-                            <div class="col-sm-7 padd-tv9-rev-one">
-                                <span> Top News in India: Read Latest News</span>
-                                <p class="p-m-bottom">
-                                    <span style="color:red">News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="col-sm-5">
-                                <img src=" images/break-img.jpg" alt="" class="img-icon-tv9 img-icon-tv9-left" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="col-sm-12 mar-tv9-alig">
-                        <div class="row">
-                            <div class="col-sm-7 padd-tv9-rev-one">
-                                <span> Top News in India: Read Latest News</span>
-                                <p class="p-m-bottom">
-                                    <span style="color:red">News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="col-sm-5">
-                                <img src=" images/break-img.jpg" alt="" class="img-icon-tv9 img-icon-tv9-left" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="col-sm-12 mar-tv9-alig">
-                        <div class="row">
-                            <div class="col-sm-7 padd-tv9-rev-one">
-                                <span> Top News in India: Read Latest News</span>
-                                <p class="p-m-bottom">
-                                    <span style="color:red">News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="col-sm-5">
-                                <img src=" images/break-img.jpg" alt="" class="img-icon-tv9 img-icon-tv9-left" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr />
-                    <div class="col-sm-12 mar-tv9-alig">
-                        <div class="row">
-                            <div class="col-sm-7 padd-tv9-rev-one">
-                                <span> Top News in India: Read Latest News</span>
-                                <p class="p-m-bottom">
-                                    <span style="color:red">News</span> |
-                                    <span>03 min ago</span>
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="col-sm-5">
-                                <img src=" images/break-img.jpg" alt="" class="img-icon-tv9 img-icon-tv9-left" />
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr />
-                    <!--Bottom in Also Read NEWS  body part-->
-                    <div class="contect-blog">
-                        <img src=" images/Add-one-img.png" width="257" height="292" alt="" />
-                    </div>
-                </div>
-                <!--End right side body part-->
+                </li>
+                </ul>
             </div>
         </div>
-    </section>
-	</article>
+      </div>
+      <!--RHS of P1-->
+      <div class="RightCont rightSidebar">
+        <div class="adsCont"><img src="images/300x250.png" alt="" /></div>
+        <div class="P1RHS HdRed"><!--Top 9 News Start-->
+          <div class="commonHD blue">
+            <h2> <a href="#"><b>News</b> <span>Top 9</span></a> </h2>
+            <a class="moreNews" href="#"><span>और पढ़ें <span>&gt;</span></span></a> </div>
+          <div class="topNewscomp">
+            <div class="col2 rhs">
+              <ul>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount two"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount three"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount four"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount five"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount six"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount seven"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount eight"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgCont"><a href="#"><img src="images/image.jpg" alt=""></a></div>
+                  <div class="newsCount nine"></div>
+                  <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                  <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                    <div class="socialHov"><span class="icon shareIcon"></span>
+                      <ul class="socialTop">
+                        <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                        <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                        <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                        <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!--Top 9 News End-->
+        
+        <div class="adsCont"><img src="images/300x250.png" alt="" /></div>
+        
+        <div class="P1RHS HdRed"> <!--Also Read-->
+        <div class="commonHD">
+          <h2> <a href="#"><b>Also Read</b><span>&nbsp;</span></a> </h2>
+          <a class="moreNews" href="#"><span>और पढ़ें <span>&gt;</span></span></a> </div>
+        <div class="topNewscomp">
+          <div class="col2 rhs">
+            <ul>
+              <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+               <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3 class="h3"><a href="#">IPL 2020 CSK vs RR Highlights: बटलर के दमदार खेल से चेन्नई पस्त, 7 विकेट से जीता राजस्थान</a></h3>
+                <div class="catTime flex"><a href="#">Breaking News</a> <span>02 Min Ago</span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="#" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="#" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="#" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="#" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Also Read-->
+        
+        
+      </div>
+     </div>
+<?php get_footer(); ?>
+
+
   
+
+
+        
+      
+     
+      
+      
+        
+        
+
+  
+
+
 <?php get_footer(); ?>
