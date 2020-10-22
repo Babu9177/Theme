@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
   $(".BNCrossbtn").click(function(){
     $(".BreakingN").remove();
   });
@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 // Menu
 function openNav() {
+	jQuery(document).ready(function($){
     if ($('body').hasClass('open-nav')){
        $('body').removeClass('open-nav');
        $('.menu li span').click(function(){
@@ -55,6 +56,7 @@ function openNav() {
       });
 
     }
+	});
     
 }
 

@@ -8,9 +8,7 @@
 		<?php wp_head(); ?>
 </head>
 <body>
-<div id="wrapper" class="animate">
-
-              <div class="Header" id="Header">
+<div class="Header" id="Header">
     <div class="MainCont">
       <div id="mySidenav" class="sidenav"> 
           <div class="overlay" onclick="openNav()"></div>
@@ -139,10 +137,9 @@
       </div>
     </div>
   </div> <!--Header CLose-->
-  
-        </div>
-		<div class="container">
+		
 		<?php if ( is_active_sidebar( 'header-widget' ) ) { ?>
 			<?php dynamic_sidebar( 'header-widget' ); ?>
 		<?php } ?>
-		</div>
+
+		

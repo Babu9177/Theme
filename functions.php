@@ -3,7 +3,7 @@
 function tv9_theme_styles() {
 	wp_enqueue_style( 'common-header', get_template_directory_uri() . '/css/common-header-footer.css' );
 	wp_enqueue_style( 'common-header-d', get_template_directory_uri() . '/css/common-header-footer-d.css' );
-	wp_enqueue_script( 'common', get_template_directory_uri() .'/js/common.js', array( 'jquery' ),'',true );
+	wp_enqueue_script( 'common-1-1', get_template_directory_uri() .'/js/common.js', array( 'jquery' ),'',true );
 	wp_enqueue_script( 'bxslider', get_template_directory_uri() .'/js/jquery.bxslider.min.js', array( 'jquery' ),'',true );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array( 'jquery' ),'',true );
     
@@ -27,7 +27,7 @@ function tv9_theme_setup() {
 	add_theme_support('custom_header');
 	add_theme_support('custom_background');
 	add_theme_support('post-thumbnails');
-    add_image_size('breaking-news', 300, 300);
+    add_image_size('breaking-news', 400, 400);
 	add_image_size('top-news-big', 220, 220);
     add_image_size('top-news', 50, 50);
 	add_theme_support('post-formats', array('aside', 'gallery', 'link','video'));
@@ -98,9 +98,7 @@ add_action( 'widgets_init', 'tv9_sidebars_init' );
 include( get_template_directory() . '/widgets/widget-breaking-trending.php');
 include( get_template_directory() . '/widgets/widget-breaking.php');
 include( get_template_directory() . '/widgets/widget-top9-menu.php');
-include( get_template_directory() . '/widgets/widget-section-top.php');
-include( get_template_directory() . '/widgets/widget-section-top-ad.php');
-
+include( get_template_directory() . '/widgets/widget-section-newstop9.php');
 
 
 

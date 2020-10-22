@@ -21,7 +21,7 @@ class tv9_top9_menu_trending extends WP_Widget {
 		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_top9_menu_trending' );
 
 		/* Create the widget. */
-		parent::__construct( 'tv9_top9_menu_trending', esc_html__('Veegam News: Top9 Menu Widget', 'veegam'), $widget_ops, $control_ops );
+		parent::__construct( 'tv9_top9_menu_trending', esc_html__('Top9 Menu Widget', 'veegam'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -51,15 +51,16 @@ class tv9_top9_menu_trending extends WP_Widget {
 
                
 			<?php if ($showhide == 'show') { ?>
-			<div class="top9" style="display:block;">
-			<nav class="navbar navbar-expand-md navbar-light  bg-light" >
-			            
+			<div class="FullCont">
+  <div class="MainCont">
+			<div class="top9MenuBox flex">
+   
 	<?php 
         $tags = get_tags(array(
-            'smallest'                  => 5, 
+            'smallest'                  => 10, 
             'largest'                   => 22,
             'unit'                      => 'px', 
-            'number'                    => 5,  
+            'number'                    => 10,  
             'format'                    => 'flex',
             'separator'                 => " ",
             'orderby'                   => 'count', 
@@ -68,65 +69,23 @@ class tv9_top9_menu_trending extends WP_Widget {
             'echo'                      => false
         ));
 		
-
-         echo '<button type="button" class="btn btn-danger"><span class="navbar-brand top">' .$title. '</span></button>';
-        echo '<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>';
-        echo '<div class="collapse navbar-collapse top9-menu" id="navbarCollapse">';
-		echo '<div class="navbar-nav middlemenu">';
+        echo '<div class="top9Menu">'.$title.'</div>';
+        echo '<ul class="top9MenuLink">';
         foreach ($tags as $tag) {
-        echo '<a href="#" class="nav-item  topmenu nav-link">' . $tag->name . '</a>';
+        echo '<li><a href="#">' . $tag->name . '</a></li>';
         }
-        echo '</div>';
+        echo '</ul>';
 		echo '</div>';
      
                 
                     
             
 				?>
-				</nav>
-                </div>
-				<?php } ?>
-				<?php if ($showhide == 'hide') { ?>
-				<div class="top9" style="display:none;">
-			<nav class="navbar navbar-expand-md navbar-light  bg-light" style="display:none;">
-			            
-	<?php 
-        $tags = get_tags(array(
-            'smallest'                  => 5, 
-            'largest'                   => 22,
-            'unit'                      => 'px', 
-            'number'                    => 5,  
-            'format'                    => 'flex',
-            'separator'                 => " ",
-            'orderby'                   => 'count', 
-            'order'                     => 'DESC',
-            'show_count'                => 1,
-            'echo'                      => false
-        ));
-		
-
-        echo '<button type="button" class="btn btn-danger"><span class="navbar-brand top">' .$title. '</span></button>';
-        echo '<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>';
-        echo '<div class="collapse navbar-collapse top9-menu" id="navbarCollapse">';
-		echo '<div class="navbar-nav middlemenu">';
-        foreach ($tags as $tag) {
-        echo '<a href="#" class="nav-item  topmenu nav-link">' . $tag->name . '</a>';
-        }
-        echo '</div>';
-		echo '</div>';
-     
-                
-                    
-            
-				?>
-				</nav>
 				</div>
-
+				</div>
+				</div>
 				<?php } ?>
+				
 				
 			
 			
