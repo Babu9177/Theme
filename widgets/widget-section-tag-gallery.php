@@ -2,26 +2,26 @@
 
 // Breaking News
 
-add_action( 'widgets_init', 'tv9_section_tag_load_widgets' );
+add_action( 'widgets_init', 'tv9_section_tag_gallery_load_widgets' );
 
-function tv9_section_tag_load_widgets() {
-	register_widget( 'tv9_section_tag_widget' );
+function tv9_section_tag_gallery_load_widgets() {
+	register_widget( 'tv9_section_tag_gallery_widget' );
 }
 
-class tv9_section_tag_widget extends WP_Widget {
+class tv9_section_tag_gallery_widget extends WP_Widget {
 
 	/**
 	 * Widget setup.
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'tv9_section_tag_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
+		$widget_ops = array( 'classname' => 'tv9_section_tag_gallery_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
 
 		/* Widget control settings. */
-		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_widget' );
+		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_gallery_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'tv9_section_tag_widget', esc_html__('TAG SECTION Widget', 'veegam'), $widget_ops, $control_ops );
+		parent::__construct( 'tv9_section_tag_gallery_widget', esc_html__('Gallery SECTION Widget', 'veegam'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -49,7 +49,7 @@ class tv9_section_tag_widget extends WP_Widget {
 
 			 <!--Trending Gallery--> 
     <?php if ($showhide == 'show') { ?>
-    <div class="GallBox trending">
+    <div class="GallBox photoGall">
    <div class="TrendHD flex">
       <div class="TrendGallHD"><h2><a href="#"><?php echo $title ?></a></h2></div>
       <ul class="TrendStripLink">
@@ -88,10 +88,26 @@ class tv9_section_tag_widget extends WP_Widget {
               <div class="imgCont">
                 <div class="socialHov"><span class="icon shareIcon"></span>
                   <ul class="socialTop">
-                    <li><a href="<?php the_permalink(); ?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    <?php
+
+        $titleurl = urlencode(get_permalink());
+ 
+        $posttitle = str_replace( ' ', '%20', get_the_title());
+    
+        $postthumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+
+        $twitterURL = 'https://twitter.com/intent/tweet?text='.$posttitle.'&amp;url='.$titleurl.'&amp;via=tv9';
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$titleurl;
+        $whatsappURL = 'whatsapp://send?text=' . $titleurl;
+
+        $shareurl = '<li><a href="'.$facebookURL.'" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>';
+        $shareurl = '<li><a href="'.$twitterURL.'" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>';
+        $shareurl = '<li><a href="'.$whatsappURL.'" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>';
+        $shareurl = '<li><a href="'.$whatsappURL.'" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>';
+        
+		
+		echo $shareurl;
+        ?>
                   </ul>
                 </div>
                 <a href="<?php the_permalink();?>"><?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { 
@@ -122,10 +138,27 @@ class tv9_section_tag_widget extends WP_Widget {
               <div class="imgCont">
                 <div class="socialHov"><span class="icon shareIcon"></span>
                   <ul class="socialTop">
-                    <li><a href="<?php the_permalink();?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
-                    <li><a href="<?php the_permalink();?>" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
-                    <li><a href="<?php the_permalink();?>" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
-                    <li><a href="<?php the_permalink();?>" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+				  <?php
+
+        $titleurl = urlencode(get_permalink());
+ 
+        $posttitle = str_replace( ' ', '%20', get_the_title());
+    
+        $postthumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+
+        $twitterURL = 'https://twitter.com/intent/tweet?text='.$posttitle.'&amp;url='.$titleurl.'&amp;via=tv9';
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$titleurl;
+        $whatsappURL = 'whatsapp://send?text='.$posttitle . ' ' . $titleurl;
+
+        $shareurl .= '<li><a href="'.$facebookURL.'" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>';
+        $shareurl .= '<li><a href="'.$twitterURL.'" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>';
+        $shareurl .= '<li><a href="'.$whatsappURL.'" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>';
+        $shareurl .= '<li><a href="'.$whatsappURL.'" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>';
+        
+		
+		echo $shareurl;
+        ?>
+                    
                   </ul>
                 </div>
                 <a href="<?php the_permalink();?>"><?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { 

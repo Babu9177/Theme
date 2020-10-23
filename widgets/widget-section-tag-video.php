@@ -2,26 +2,26 @@
 
 // Breaking News
 
-add_action( 'widgets_init', 'tv9_section_tag_load_widgets' );
+add_action( 'widgets_init', 'tv9_section_tag_video_load_widgets' );
 
-function tv9_section_tag_load_widgets() {
-	register_widget( 'tv9_section_tag_widget' );
+function tv9_section_tag_video_load_widgets() {
+	register_widget( 'tv9_section_tag_video_widget' );
 }
 
-class tv9_section_tag_widget extends WP_Widget {
+class tv9_section_tag_video_widget extends WP_Widget {
 
 	/**
 	 * Widget setup.
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'tv9_section_tag_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
+		$widget_ops = array( 'classname' => 'tv9_section_tag_video_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
 
 		/* Widget control settings. */
-		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_widget' );
+		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_video_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'tv9_section_tag_widget', esc_html__('TAG SECTION Widget', 'veegam'), $widget_ops, $control_ops );
+		parent::__construct( 'tv9_section_tag_video_widget', esc_html__('TAG VIDEO SECTION Widget', 'veegam'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -49,7 +49,7 @@ class tv9_section_tag_widget extends WP_Widget {
 
 			 <!--Trending Gallery--> 
     <?php if ($showhide == 'show') { ?>
-    <div class="GallBox trending">
+    <div class="GallBox video">
    <div class="TrendHD flex">
       <div class="TrendGallHD"><h2><a href="#"><?php echo $title ?></a></h2></div>
       <ul class="TrendStripLink">
@@ -59,7 +59,7 @@ class tv9_section_tag_widget extends WP_Widget {
                foreach ($tags as $tag){
                 if($i==10)
                 break;
-              echo  '<li><a href="https://tv9bharatvarsh.com/tag/'.$tag.'">#' . $tag . '</a></li>';   
+              echo  '<li><a href="https://tv9bharatvarsh.com/tag/'.$tag.'">#' . $tag . '</a></li>';    
                 $i++;
                } ?>
         <li class="GallMore"><a href="#">और पढ़ें &gt;</a></li>
@@ -86,6 +86,7 @@ class tv9_section_tag_widget extends WP_Widget {
 				if (isset($do_not_duplicate)) { ?>
             <li>
               <div class="imgCont">
+			  <i class="videoIcon icon"></i>
                 <div class="socialHov"><span class="icon shareIcon"></span>
                   <ul class="socialTop">
                     <li><a href="<?php the_permalink(); ?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
@@ -120,6 +121,7 @@ class tv9_section_tag_widget extends WP_Widget {
 				if (isset($do_not_duplicate)) { ?>
              <li>
               <div class="imgCont">
+			  <i class="videoIcon icon"></i>
                 <div class="socialHov"><span class="icon shareIcon"></span>
                   <ul class="socialTop">
                     <li><a href="<?php the_permalink();?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>

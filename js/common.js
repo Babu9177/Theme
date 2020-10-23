@@ -14,6 +14,8 @@ $(document).ready(function(){
 	slideMargin:20,
 	responsive:true,
 	pager:false,
+	
+
   });
 });		
 

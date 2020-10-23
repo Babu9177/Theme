@@ -90,6 +90,11 @@ include( get_template_directory() . '/widgets/widget-breaking.php');
 include( get_template_directory() . '/widgets/widget-top9-menu.php');
 include( get_template_directory() . '/widgets/widget-section-newstop9.php');
 include( get_template_directory() . '/widgets/widget-section-newstop9-right.php');
+include( get_template_directory() . '/widgets/widget-section-tag.php');
+include( get_template_directory() . '/widgets/widget-section-tag-video.php');
+include( get_template_directory() . '/widgets/widget-section-tag-gallery.php'); 
+include( get_template_directory() . '/widgets/widget-section-news-4-col.php'); 
+include( get_template_directory() . '/widgets/widget-section-news-6-col.php'); 
 
 //breadcrumb
 

@@ -2,26 +2,26 @@
 
 // Breaking News
 
-add_action( 'widgets_init', 'tv9_section_tag_load_widgets' );
+add_action( 'widgets_init', 'tv9_section_news_4_col_load_widgets' );
 
-function tv9_section_tag_load_widgets() {
-	register_widget( 'tv9_section_tag_widget' );
+function tv9_section_news_4_col_load_widgets() {
+	register_widget( 'tv9_section_news_4_col_widget' );
 }
 
-class tv9_section_tag_widget extends WP_Widget {
+class tv9_section_news_4_col_widget extends WP_Widget {
 
 	/**
 	 * Widget setup.
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'tv9_section_tag_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
+		$widget_ops = array( 'classname' => 'tv9_section_news_4_col_widget', 'description' => esc_html__('Top section display posts in a row.', 'tv9-news') );
 
 		/* Widget control settings. */
-		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_tag_widget' );
+		$control_ops = array( 'width' => 50, 'height' => 50, 'id_base' => 'tv9_section_news_4_col_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'tv9_section_tag_widget', esc_html__('TAG SECTION Widget', 'veegam'), $widget_ops, $control_ops );
+		parent::__construct( 'tv9_section_news_4_col_widget', esc_html__('NEWS 4 COL Widget', 'veegam'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -46,37 +46,24 @@ class tv9_section_tag_widget extends WP_Widget {
 
 		?>
 		
-
-			 <!--Trending Gallery--> 
-    <?php if ($showhide == 'show') { ?>
-    <div class="GallBox trending">
-   <div class="TrendHD flex">
-      <div class="TrendGallHD"><h2><a href="#"><?php echo $title ?></a></h2></div>
-      <ul class="TrendStripLink">
-          <?php 
-          $tags = explode(",",$enterslug);
-               $i= 0;
-               foreach ($tags as $tag){
-                if($i==10)
-                break;
-              echo  '<li><a href="https://tv9bharatvarsh.com/tag/'.$tag.'">#' . $tag . '</a></li>';   
-                $i++;
-               } ?>
-        <li class="GallMore"><a href="#">और पढ़ें &gt;</a></li>
-      </ul>
-    </div>
-    
-    <div class="CarouselBox">
-    <ul class="Gslider">
-    <?php if ($tagcat == 'tag') { 
+		<!--Box Box Start-->
+		 <?php if ($showhide == 'show') { ?>
+		 <div class="commonBox">
+		 <div class="LeftCont">
+      <div class="newsTop9 HdRed">
+        <div class="commonHD">
+          <h2> <a href="#"><span><?php echo $title; ?></span></a> </h2>
+          <a class="moreNews" href="#"><span>और पढ़ें <span>&gt;</span></span></a> </div>
+        <div class="topNewscomp">
+		<?php if ($tagcat == 'tag') { 
              $cond = array( 
-				'tag' => $tags, 
-				'posts_per_page' => '30', 
+				'tag' => $enterslug, 
+				'posts_per_page' => '5', 
                 'post__not_in'=>$do_not_duplicate );
              }elseif ($tagcat == 'category') { 
             $cond = array( 
-                   'category_name' => $tags, 
-                   'posts_per_page' => '30', 
+                   'category_name' => $enterslug, 
+                   'posts_per_page' => '5', 
                    'post__not_in'=>$do_not_duplicate );
                 }
 				global $do_not_duplicate; 
@@ -84,41 +71,8 @@ class tv9_section_tag_widget extends WP_Widget {
 				$recent = new WP_Query($cond);
 				if($recent->have_posts()) : $recent->the_post(); $do_not_duplicate[] = $post->ID; 
 				if (isset($do_not_duplicate)) { ?>
-            <li>
-              <div class="imgCont">
-                <div class="socialHov"><span class="icon shareIcon"></span>
-                  <ul class="socialTop">
-                    <li><a href="<?php the_permalink(); ?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
-                    <li><a href="<?php the_permalink(); ?>" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
-                  </ul>
-                </div>
-                <a href="<?php the_permalink();?>"><?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { 
-												echo '<img src='.the_post_thumbnail(array(280, 157)).'>'; 
-												echo '</img>';
-											 } 
-											if ( has_post_format( 'video' )) { 
-												echo '<div class="tv9-vid-box-wrap tv9-vid-box-mid tv9-vid-marg">';
-												echo '<i class="fa fa-2 fa-play" aria-hidden="true"></i>';
-												echo '</div>';
-											} else if ( has_post_format( 'gallery' )) { 
-												echo '<div class="tv9-vid-box-wrap tv9-vid-box-mid">';
-												echo '<i class="fa fa-2 fa-camera" aria-hidden="true"></i>';
-												echo '</div>';
-											 }
-
-											 ?></a> </div>
-              <h3 class="h3"><a href="<?php the_permalink();?>"><?php echo wp_trim_words(get_the_title(), 8, false); ?></a></h3>
-              <div class="catTime flex"><i class="blnk"></i> <a href="#">Live</a> <span><?php printf( esc_html__( '%s ago'), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></span></div>
-             </li>
-             <?php 
-        } 
-        endif;
-        ?> 
-        <?php while($recent->have_posts()) : $recent->the_post(); $do_not_duplicate[] = $post->ID; 
-				if (isset($do_not_duplicate)) { ?>
-             <li>
+          <div class="BigStory">
+            <div class="FirstS">
               <div class="imgCont">
                 <div class="socialHov"><span class="icon shareIcon"></span>
                   <ul class="socialTop">
@@ -142,15 +96,64 @@ class tv9_section_tag_widget extends WP_Widget {
 												echo '</div>';
 											 }
 
-											 ?></a> </div>
-              <h3 class="h3"><a href="<?php the_permalink();?>"><?php echo wp_trim_words(get_the_title(), 8, false); ?></a></h3>
+											 ?></a></div>
+              <h3 class="h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <div class="catTime flex"><a href="#"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></a> <span><?php printf( esc_html__( '%s ago'), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></span></div>
-             </li> 
-             <?php } endwhile; ?>
+            </div>
              
-    </ul></div>
-    </div><!--Trending Gallery End-->
-    <?php } ?>
+          </div>
+		  <?php 
+        } 
+        endif;
+        ?>
+          <div class="smallStory col2">
+            <ul>
+			 <?php while($recent->have_posts()) : $recent->the_post(); $do_not_duplicate[] = $post->ID; 
+				if (isset($do_not_duplicate)) { ?>
+              <li>
+                <div class="imgCont"><a href="<?php the_permalink();?>"><?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { 
+												echo '<img src='.the_post_thumbnail(array(102, 57)).'>'; 
+												echo '</img>';
+											 } 
+											if ( has_post_format( 'video' )) { 
+												echo '<div class="tv9-vid-box-wrap tv9-vid-box-mid tv9-vid-marg">';
+												echo '<i class="fa fa-2 fa-play" aria-hidden="true"></i>';
+												echo '</div>';
+											} else if ( has_post_format( 'gallery' )) { 
+												echo '<div class="tv9-vid-box-wrap tv9-vid-box-mid">';
+												echo '<i class="fa fa-2 fa-camera" aria-hidden="true"></i>';
+												echo '</div>';
+											 }
+
+                                             ?></a></div>
+                <h3 class="h3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></</h3>
+                <div class="catTime flex"><a href="#"><?php $category = get_the_category(); echo esc_html( $category[0]->cat_name ); ?></a>  <span><?php printf( esc_html__( '%s ago'), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ); ?></span>
+                  <div class="socialHov"><span class="icon shareIcon"></span>
+                    <ul class="socialTop">
+                      <li><a href="<?php the_permalink();?>" class="icon fBtn" title="facebook" target="_blank"><i>Facebook</i></a> </li>
+                      <li><a href="<?php the_permalink();?>" class="icon twitBtn" title="Twitter" target="_blank"><i>Twitter</i></a> </li>
+                      <li><a href="<?php the_permalink();?>" class="icon whatsBtn" title="youtube" target="_blank"><i>Whatsapp</i></a> </li>
+                      <li><a href="<?php the_permalink();?>" class="icon emailBtn" title="Email" target="_blank"><i>Email</i>&nbsp;</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <?php } endwhile; ?>
+             
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="RightCont">
+	<?php $templdir = get_template_directory_uri(); ?>
+      <div class="adsCont adsbg"><img src="<?php echo $templdir; ?>/images/300x250.png" alt="" /></div>
+           </div></div> <!---Common Box End-->
+		 <?php } ?>
+			
+			
 
           			
 			
